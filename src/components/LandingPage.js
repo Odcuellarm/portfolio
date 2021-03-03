@@ -16,11 +16,11 @@ class LandingPage extends Component{
                             className="avatar-img"
                         />
                         <div className="banner-text">
-                            <h1 style={{marginBottom: '2px'}}>Oscar Mendez</h1>
+                            <h1>Oscar Mendez</h1>
                             <hr/>
-                            <h3 style={{marginTop: '2px', marginBottom: '2px'}}>Front-End Web Developer</h3>
-                            <div>
-                                <h4 style={{marginTop: '2px'}}>Let's create stunning products together</h4>
+                            <h3>Front-End Web Developer</h3>
+                        <div>
+                                <h4>Let's create stunning products together</h4>
 
                                 <div className="social-links"> 
                                     <div style={{marginRight: '10px'}}>
