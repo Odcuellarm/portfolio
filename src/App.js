@@ -12,14 +12,14 @@ class App extends Component {
         <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">Oscar Mendez</Link>} scroll>
             <Navigation>
                 <Link to="/Projects">Projects</Link>
-                <Link to="/">Resume</Link>
+                <Link to="/Resume">Resume</Link>
                 <Link to="/Contact">Contact</Link>
             </Navigation>
         </Header>
         <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Oscar Mendez</Link>}>
             <Navigation>
             <Link to="/Projects">Projects</Link>
-              <Link to="/">Resume</Link>
+              <Link to="/Resume">Resume</Link>
               <Link to="/Contact">Contact</Link>
             </Navigation>
         </Drawer>
