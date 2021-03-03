@@ -13,14 +13,14 @@ class App extends Component {
             <Navigation>
                 <Link to="/Projects">Projects</Link>
                 <Link to="/">Resume</Link>
-                <Link to="/">Contact</Link>
+                <Link to="/Contact">Contact</Link>
             </Navigation>
         </Header>
         <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Oscar Mendez</Link>}>
             <Navigation>
             <Link to="/Projects">Projects</Link>
               <Link to="/">Resume</Link>
-              <Link to="/">Contact</Link>
+              <Link to="/Contact">Contact</Link>
             </Navigation>
         </Drawer>
         <Content>
