@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { render } from 'react-dom';
 import { Cell, Grid } from 'react-mdl';
+import profilePic from '../img/frameDarkBlue.png';
 
 class LandingPage extends Component{
     
@@ -9,7 +10,11 @@ class LandingPage extends Component{
             <div style={{width: '100%', margin: 'auto'}}>
                 <Grid className="landing-grid">
                     <Cell col={12}>
-                       
+                        <img
+                            src={profilePic}
+                            alt="profile-pic"
+                            className="avatar-img"
+                        />
                         <div className="banner-text">
                             <h1 style={{marginBottom: '2px'}}>Oscar Mendez</h1>
                             <hr/>
