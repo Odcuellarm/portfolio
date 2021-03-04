@@ -13,102 +13,96 @@ class Projects extends Component{
             return(
                 <div className='projects-grid'>
                     {/* Project 1 */}
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{ color: 'white', 
-                                        height: '176px', 
-                                        background: 'url(https://cdn.pixabay.com/photo/2018/07/18/13/05/ecommerce-3546296_960_720.jpg) center / cover'}}>
-                                        Ecommerce-Affinity</CardTitle>
-                    <CardText>
-                        Full Stack ecommerce application. Featuring user authentication, product filtering, and cart page integrated with braintree(PayPal).
-                        <ul style={{listStyleType: 'none'}}> 
-                            <li>RestFul API</li>
-                            <li>React Hooks</li>
-                            <li>jwt authentication</li>
-                            <li>Braintree</li>
-                        </ul>
-                    </CardText>
-                    <CardActions border style={{textAlign: 'center'}}>
-                        <a  href={"https://github.com/Odcuellarm/affinityEcommerce"} 
-                            target="_blank" 
-                            style={{textDecoration: 'none',  
-                                    backgroundColor: '#f44336',
-                                    color: 'white',
-                                    padding: '14px 25px',
-                                    textAlign: 'center',
-                                    textDecoration: 'none',
-                                    display: 'inline-block'}}>
-                        See Program on GitHub</a>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name='share'/>
-                    </CardMenu>
-                </Card>
+                <div className='card-style'>
+                    <CardTitle className='card-title card-one'>Ecommerce-Affinity</CardTitle>
+                    <div className='card-body'>
+                        <CardText className='card-text'>
+                            <span className='long-description'>
+                                Full Stack ecommerce application. Featuring user authentication, product filtering, and cart page integrated with braintree(PayPal).
+                                <ul style={{listStyleType: 'none'}}> 
+                                    <li>RestFul API</li>
+                                    <li>React Hooks</li>
+                                    <li>jwt authentication</li>
+                                    <li>Braintree</li>
+                                </ul>
+                            </span>
+                            <span className='short-description'>
+                                <p>Full Stack ecommerce application.</p>
+                                <p>RestFul API*React Hooks*jwt Auth*Braintree</p>
+                            </span>
+                            
+                        </CardText>
+                        <CardActions className='card-btn'>
+                            <a  className="btn-gogit" 
+                                href={"https://github.com/Odcuellarm/affinityEcommerce"} 
+                                target="_blank">
+                            See Program on GitHub</a>
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name='share'/>
+                        </CardMenu>
+                    </div>
+                </div>
 
                     {/* Project 2 */}
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{ color: 'white',
-                                        height: '176px',
-                                        background: 'url(https://cdn.pixabay.com/photo/2014/12/16/16/19/smartphone-570507_960_720.jpg) center / cover'}}>
-                                        Todo Checklist</CardTitle>
-                    <CardText>
-                        Complete your daily tasks using this basic Full Stack application with API routing with React, Express, and Postgres.
-                        <ul style={{listStyleType: 'none'}}> 
-                            <li>Node JS</li>
-                            <li>Express</li>
-                            <li>CRUD</li>
-                            <li>Postgres</li>
-                        </ul>
-                    </CardText>
-                    <CardActions border style={{textAlign: 'center'}}>
-                        <a  href={"https://github.com/Odcuellarm/accomplishTODOlist"} 
-                            target="_blank" 
-                            style={{textDecoration: 'none',  
-                                    backgroundColor: '#f44336',
-                                    color: 'white',
-                                    padding: '14px 25px',
-                                    textAlign: 'center',
-                                    textDecoration: 'none',
-                                    display: 'inline-block'}}>
-                        See Program on GitHub</a>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name='share'/>
-                    </CardMenu>
-                </Card>
+                <div className='card-style'>
+                    <CardTitle className='card-title card-two'>Todo Checklist</CardTitle>
+                    <div className='card-body'>
+                        <CardText className='card-text'>
+                                Complete your daily tasks using this basic Full Stack application with API routing with React, Express, and Postgres.
+                                <ul style={{listStyleType: 'none'}}> 
+                                    <li>NodeJS</li>
+                                    <li>Express</li>
+                                    <li>CRUD</li>
+                                    <li>Postgres</li>
+                                </ul>
+                        </CardText>
+                        <CardActions className='card-btn'>
+                            <a  className="btn-gogit" 
+                                href={"https://github.com/Odcuellarm/accomplishTODOlist"} 
+                                target="_blank">
+                            See Program on GitHub</a>
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name='share'/>
+                        </CardMenu>
+                    </div>
+                </div>
 
                  {/* Project 3 */}
-                 <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{ color: 'white', 
-                                        height: '176px', 
-                                        background: 'url(https://cdn.pixabay.com/photo/2019/04/28/09/39/still-life-4162597_960_720.jpg) center / cover'}}>
-                                        Chinese Mandarin Cards</CardTitle>
-                    <CardText>
-                        Learn Mandarin Chinese with a set of interactive cards. This is a basic full stack application connected to a postgres DB.
-                        <ul style={{listStyleType: 'none'}}> 
-                            <li>Node JS</li>
-                            <li>Express</li>
-                            <li>CRUD</li>
-                            <li>MySQL</li>
-                        </ul>
-                    </CardText>
-                    <CardActions border style={{textAlign: 'center'}}>
-                        <a  href={"https://github.com/Odcuellarm/chineseCardsApp"} 
-                            target="_blank" 
-                            style={{textDecoration: 'none',  
-                                    backgroundColor: '#f44336',
-                                    color: 'white',
-                                    padding: '14px 25px',
-                                    textAlign: 'center',
-                                    textDecoration: 'none',
-                                    display: 'inline-block'}}>
-                        See Program on GitHub</a>
-
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name='share'/>
-                    </CardMenu>
-                </Card>
-
+                
+                    <div className='card-style'>
+                        <CardTitle className='card-title card-three'>Chinese Mandarin Cards</CardTitle>
+                        <div className='card-body'>
+                            <CardText className='card-text'>
+                                <span className='long-description'>
+                                    Learn Mandarin Chinese with a set of interactive cards. This is a basic full stack application connected to a postgres DB.
+                                    <ul style={{listStyleType: 'none'}}> 
+                                        <li>NodeJS</li>
+                                        <li>Express</li>
+                                        <li>CRUD</li>
+                                        <li>MySQL</li>
+                                    </ul>
+                                </span>
+                                <span className='short-description'>
+                                    <p>Mandarin Chinese study cards.</p>
+                                    <p>NodeJs*Express*CRUD*MySQL</p>
+                                </span>
+                                
+                            </CardText>
+                            <CardActions className='card-btn'>
+                                <a  className="btn-gogit" 
+                                    href={"https://github.com/Odcuellarm/chineseCardsApp"} 
+                                    target="_blank" 
+                                    >
+                                See Program on GitHub</a>
+                            </CardActions>
+                            <CardMenu style={{color: '#fff'}}>
+                                <IconButton name='share'/>
+                            </CardMenu>
+                        </div>      
+                    </div>
+                    
                 </div>
                  
             )

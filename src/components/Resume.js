@@ -22,7 +22,7 @@ class Resume extends Component{
                                     to learn new traits, works well both independently and as part of a team.   
                                 </p>
 
-                            <h4 style={{color: 'gray'}}>Additional Information</h4>
+                            <h4 style={{color: 'gray'}}>Personal Information</h4>
                             <hr style={{borderTop: '3px solid #833fb2', width: '80%'}}/>
                                     <h5>Phone</h5>
                                         <p>(720) 435-0645</p>

@@ -19,26 +19,23 @@ class LandingPage extends Component{
                             <h1>Oscar Mendez</h1>
                             <hr/>
                             <h3>Front-End Web Developer</h3>
-                        <div>
+                            
+                            <div>
                                 <h4>Let's create stunning products together</h4>
 
                                 <div className="social-links"> 
-                                    <div style={{marginRight: '10px'}}>
+                                    <div>
                                         <a href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank">
                                             <i className="fa fa-linkedin-square" aria-hidden="true"></i>
-                                        </a>                                    
-                                    </div>                            
-                                    <div style={{margin: '0 6px'}}>
-                                        <a href="https://github.com/Odcuellarm" rel="noopener noreferrer" target="_blank">
-                                            <i className="fa fa-github-square" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                    <div style={{marginLeft: '10px'}}>
+                                        </a>   
                                         <a href="https://twitter.com/?lang=en" rel="noopener noreferrer" target="_blank">
                                             <i className="fa fa-twitter-square" aria-hidden="true"></i>
                                         </a>
-                                    </div>
-                                    
+                                        <a href="https://github.com/Odcuellarm" rel="noopener noreferrer" target="_blank">
+                                            <i className="fa fa-github-square" aria-hidden="true"></i>
+                                        </a>                                 
+                                    </div>                            
+                                                                        
                                 </div>
                             </div>                                                
                                                       
