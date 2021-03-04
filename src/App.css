@@ -229,8 +229,13 @@
     width: 94%;
   }
   .form-container{
-    margin-left: 0.5em;
+    margin-left: 0.7em;
   }
+
+  .form-group{
+    padding-top: 0.8em;
+  }
+
   .personal-info{
     width: 90%;
   }
