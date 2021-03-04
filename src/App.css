@@ -97,7 +97,7 @@
   
   .card-text{
     height: 4.2em;
-    width: 70%;
+    width: 100%;
     padding-top: 1px;
   }
 
@@ -135,14 +135,81 @@
 }
 
 .contact-grid{
-  text-align: center;
-  justify-content: center;
+  display: flex;
   width: 80%;
   height: 75%;
   background: white;
   color: black;
   border: 2px solid red;
-  margin-top: 20px;
+  margin: 2em auto;
+}
+
+/*Contact form elements*/
+
+.form-container{
+  margin: auto;
+}
+.form-horizontal {
+  float: left;
+  max-width: 26em;
+  font-weight: 400;
+}
+
+.form-group{
+  float: right;
+  padding-top: 2em;
+  font-size: 1em;
+  font-family: Roboto;
+}
+
+.contact-label{
+  font-size: 26px;
+  font-family: Roboto;
+}
+
+.form-control{
+  width: 300px;
+}
+
+.message-label{
+  margin-top: 4px;
+}
+/*Contact personal information*/
+.personal-info{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+}
+
+.contact-title{
+  width: 100%;
+}
+
+.contact-title h2{
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+.phone{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.phone i{
+  font-size: 4vw;
+  padding-right: 1rem;
+}
+
+.phone h3{
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.phone h4{
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .contact-grid h2{
@@ -154,11 +221,28 @@
   font-weight: bold;
 }
 
-.contact-list i{
-  font-size: 64px;
-  padding-right: 5rem;
+@media (max-width: 850px){
+  .contact-grid{
+    flex-direction: column-reverse;
+    margin-top: 2em;
+    height: 90%;
+    width: 94%;
+  }
+  .personal-info{
+    width: 90%;
+  }
+  .phone{
+    margin-left: 3.8em;
+  }
+  .phone i{
+    font-size: 4em;
+  }
+  .phone h4{
+    margin-top: 0.7rem;
+  }
 }
-/*  Contact page CSS  */
+
+/*  Landing page  */
 
 .avatar-img{
   height: 250px;
@@ -252,29 +336,3 @@
   }
 }
 
-.form-horizontal {
-  float: left;
-  max-width: 400px;
-  font-weight: 400;
-  margin: 100px 0 0 60px;
-}
-
-.form-group{
-  float: right;
-  padding-top: 30px;
-  font-size: '50px';
-  font-family: 'Roboto'
-}
-
-.contact-label{
-  font-size: '26px';
-  font-family: 'Roboto'
-}
-
-.form-control{
-  width: 300px;
-}
-
-.message-label{
-  margin-top: 4px;
-}
